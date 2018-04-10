@@ -1,7 +1,19 @@
 ## wxPython 从入门到放肆
 
 pass
+e61 获取鼠标位置较pdf有改动
 
+```python
+event.GetPositionTuple()
+```
+
+改为
+```python
+(x,y) = (event.GetX(), event.GetY())
+newPos = (x,y)
+```
+
+因为，貌似现在没有GetPositionTuple这个函数了
 
 # issues
 
